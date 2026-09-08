@@ -37,6 +37,8 @@ def sieg_check(feld, spieler):
         return True
     if feld[2][0] == spieler and feld[1][1] == spieler and feld[0][2] == spieler:
         return True
+    else:
+        return False
 
 feld_anzeigen()
 
@@ -52,3 +54,4 @@ while True:
     elif o_gewinnt:
         print("O hat gewonnen")
         break
+
